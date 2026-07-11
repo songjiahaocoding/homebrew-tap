@@ -1,22 +1,22 @@
 class Fe < Formula
   desc "Agent-friendly structured file editor for JSON and YAML"
   homepage "https://github.com/songjiahaocoding/fe"
-  version "0.2.1"
+  version "0.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/songjiahaocoding/fe/releases/download/v0.2.1/fe-v0.2.1-aarch64-apple-darwin.tar.gz"
-      sha256 "6811ca3bb1cca7bb5afad6d375c3d4f001c1f6f127b2d9a8d57d7926b77ca94e"
+      url "https://github.com/songjiahaocoding/fe/releases/download/v0.3/fe-v0.3-aarch64-apple-darwin.tar.gz"
+      sha256 "ae3b288b8a2842475f89b46b0842c1d6f93885732ead214a877e01e6434ca224"
     else
-      url "https://github.com/songjiahaocoding/fe/releases/download/v0.2.1/fe-v0.2.1-x86_64-apple-darwin.tar.gz"
-      sha256 "3887c8df9e12cabef011ea9d9670dfbe18bea05b3db3eadf3fc957606d07ae44"
+      url "https://github.com/songjiahaocoding/fe/releases/download/v0.3/fe-v0.3-x86_64-apple-darwin.tar.gz"
+      sha256 "ba5e67bf84df3bf05745f2489414f7ca9da23de81fa3c2f6d2f1d5a4a4f6ca19"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/songjiahaocoding/fe/releases/download/v0.2.1/fe-v0.2.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "151bd46bdd431585e1090121f2dda6606a54fa0c58585fddcdebc8cc06bce7c0"
+      url "https://github.com/songjiahaocoding/fe/releases/download/v0.3/fe-v0.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "468c8a4c954181dba06b983815729c6c4d6d729b93f2c41ef1082e973f263867"
     else
       odie "fe does not provide a Linux ARM64 Homebrew bottle yet"
     end
